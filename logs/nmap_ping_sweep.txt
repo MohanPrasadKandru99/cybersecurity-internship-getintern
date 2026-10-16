@@ -1,0 +1,15 @@
+# Nmap 7.99 scan initiated Fri Oct 16 14:09:37 2026 as: /usr/lib/nmap/nmap --privileged -sn -oN nmap_ping_sweep.txt 192.168.245.0/24
+mass_dns: warning: Unable to open /etc/resolv.conf. Try using --system-dns or specify valid servers with --dns-servers: No such file or directory (2)
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.245.1
+Host is up (0.0010s latency).
+MAC Address: 0A:00:27:00:00:12 (Unknown)
+Nmap scan report for 192.168.245.2
+Host is up (0.00076s latency).
+MAC Address: 08:00:27:2F:12:4B (Oracle VirtualBox virtual NIC)
+Nmap scan report for 192.168.245.3
+Host is up (0.0020s latency).
+MAC Address: 08:00:27:89:32:BF (Oracle VirtualBox virtual NIC)
+Nmap scan report for 192.168.245.4
+Host is up.
+# Nmap done at Fri Oct 16 14:09:40 2026 -- 256 IP addresses (4 hosts up) scanned in 2.05 seconds
