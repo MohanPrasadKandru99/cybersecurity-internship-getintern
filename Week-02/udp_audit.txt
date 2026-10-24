@@ -1,0 +1,19 @@
+# Nmap 7.99 scan initiated Sat Oct 24 00:59:01 2026 as: /usr/lib/nmap/nmap -sU --top-ports 100 -v -oN udp_audit.txt 192.168.245.3
+mass_dns: warning: Unable to open /etc/resolv.conf. Try using --system-dns or specify valid servers with --dns-servers: No such file or directory (2)
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Increasing send delay for 192.168.245.3 from 400 to 800 due to 11 out of 17 dropped probes since last increase.
+Nmap scan report for 192.168.245.3
+Host is up (0.0023s latency).
+Not shown: 93 closed udp ports (port-unreach)
+PORT     STATE         SERVICE
+53/udp   open          domain
+68/udp   open|filtered dhcpc
+69/udp   open|filtered tftp
+111/udp  open          rpcbind
+137/udp  open          netbios-ns
+138/udp  open|filtered netbios-dgm
+2049/udp open          nfs
+MAC Address: 08:00:27:89:32:BF (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/share/nmap
+# Nmap done at Sat Oct 24 01:00:52 2026 -- 1 IP address (1 host up) scanned in 110.90 seconds
