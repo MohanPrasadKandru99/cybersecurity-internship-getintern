@@ -48,9 +48,17 @@ sudo nmap -sV -sC -p- 192.168.245.3 -oN service_fingerprint.txt
 
 * **Vulnerable Daemons:** Highly deprecated versions of `vsftpd` and `UnrealIRCd` were fingerprinted on the target.
 
-## 5. Deliverables & Logging
+## 4. Attack Surface Risk Matrix
 
-All raw scan outputs verifying the telemetry in this report have been captured and archived.
+The following matrix synthesizes the scan telemetry, mapping exposed services to their inherent risk levels and outlining immediate remediation strategies.
+
+| **Host IP** | **Port** | **Service** | **Version** | **Inherent Risk Level** | **Remediation Strategy** | 
+| `192.168.245.3` | 21/TCP | FTP | vsftpd 2.3.4 | **High** | Contains a known malicious backdoor (CVE-2011-2523). Upgrade daemon and enforce FTPS/SFTP. | 
+| `192.168.245.3` | 22/TCP | SSH | OpenSSH 4.7p1 | **Medium** | Legacy version vulnerable to user enumeration. Upgrade to the latest stable OpenSSH release. | 
+| `192.168.245.3` | 23/TCP | Telnet | Linux telnetd | **High** | Cleartext protocol. Disable the Telnet service entirely and mandate SSH for remote administration. | 
+| `192.168.245.3` | 25/TCP | SMTP | Postfix smtpd | **Medium** | Open mail relay risks. Enforce strict authentication and TLS encryption for transport. | 
+| `192.168.245.3` | 80/TCP | HTTP | Apache 2.2.8 | **Medium** | Outdated web server exposing multiple vectors. Patch to current Apache release and deploy WAF. | 
+| `192.168.245.3` | 3632/TCP | distccd | distccd v1 | **High** | Allows remote arbitrary code execution (CVE-2004-2687). Disable service or restrict access strictly to trusted IPs via firewall. | 
 
 ```
 Week-02-Port-Auditing/
