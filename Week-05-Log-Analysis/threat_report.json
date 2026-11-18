@@ -1,0 +1,33 @@
+{
+    "total_failed_attempts": 7,
+    "unique_attacking_ips": 1,
+    "top_10_attacking_ips": [
+        {
+            "rank": 1,
+            "ip": "192.168.245.1",
+            "attempts": 7
+        }
+    ],
+    "targeted_usernames": [
+        {
+            "username": "admin",
+            "attempts": 3
+        },
+        {
+            "username": "test",
+            "attempts": 1
+        },
+        {
+            "username": "oracle",
+            "attempts": 1
+        },
+        {
+            "username": "guest",
+            "attempts": 1
+        },
+        {
+            "username": "ubuntu",
+            "attempts": 1
+        }
+    ]
+}
