@@ -1,0 +1,40 @@
+{
+  "engine_name": "Automated Incident Alerting & Brute-Force Detection Engine",
+  "version": "1.0.0",
+  "log_file": "auth.log",
+  "threshold": 10,
+  "window_seconds": 60,
+  "cooldown_seconds": 120,
+  "privileged_usernames": [
+    "root",
+    "admin",
+    "administrator",
+    "wheel",
+    "toor",
+    "superuser",
+    "oracle",
+    "postgres",
+    "mysql",
+    "master",
+    "sysadmin"
+  ],
+  "severity_scoring": {
+    "critical_attempt_threshold": 30,
+    "high_attempt_threshold": 20,
+    "spraying_unique_user_threshold": 3,
+    "privileged_account_escalation": true
+  },
+  "mitigation": {
+    "ufw_action": "deny",
+    "iptables_target": "DROP",
+    "target_port": 22,
+    "protocol": "tcp",
+    "rule_comment": "SOC-ALERT-BruteForce-Containment"
+  },
+  "output_files": {
+    "alert_json": "security_alert.json",
+    "incident_summary": "incident_summary.md",
+    "blocklist_script": "firewall_blocklist.sh",
+    "blocklist_ips": "blocklist_ips.txt"
+  }
+}

@@ -1,0 +1,112 @@
+Oct 16 13:54:59 metasploitable sshd[4141]: Server listening on :: port 22.
+Oct 16 13:54:59 metasploitable sshd[4141]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.
+Oct 16 13:55:21 metasploitable login[4665]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=tty1 ruser= rhost=  user=msfadmin
+Oct 16 13:55:22 metasploitable login[4665]: FAILED LOGIN (1) on 'tty1' FOR `msfadmin', Authentication failure
+Oct 16 13:55:32 metasploitable login[4665]: pam_unix(login:session): session opened for user msfadmin by LOGIN(uid=0)
+Oct 16 14:09:01 metasploitable CRON[4809]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 16 14:09:01 metasploitable CRON[4809]: pam_unix(cron:session): session closed for user root
+Oct 16 14:17:01 metasploitable CRON[4841]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 16 14:17:01 metasploitable CRON[4841]: pam_unix(cron:session): session closed for user root
+Oct 16 14:39:01 metasploitable CRON[4914]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 16 14:39:01 metasploitable CRON[4914]: pam_unix(cron:session): session closed for user root
+Oct 23 23:37:20 metasploitable sshd[4141]: Server listening on :: port 22.
+Oct 23 23:37:20 metasploitable sshd[4141]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.
+Oct 23 23:37:42 metasploitable login[4669]: pam_unix(login:auth): check pass; user unknown
+Oct 23 23:37:42 metasploitable login[4669]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=tty1 ruser= rhost= 
+Oct 23 23:37:44 metasploitable login[4669]: FAILED LOGIN (1) on 'tty1' FOR `UNKNOWN', User not known to the underlying authentication module
+Oct 23 23:37:55 metasploitable login[4669]: pam_unix(login:session): session opened for user msfadmin by LOGIN(uid=0)
+Oct 23 23:39:01 metasploitable CRON[4763]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 23 23:39:01 metasploitable CRON[4763]: pam_unix(cron:session): session closed for user root
+Oct 23 23:56:43 metasploitable sshd[4129]: Server listening on :: port 22.
+Oct 23 23:56:43 metasploitable sshd[4129]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.
+Oct 23 23:57:02 metasploitable login[4660]: pam_unix(login:session): session opened for user msfadmin by LOGIN(uid=0)
+Oct 24 00:02:01 metasploitable CRON[4770]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 00:02:01 metasploitable CRON[4770]: pam_unix(cron:session): session closed for user root
+Oct 24 00:09:01 metasploitable CRON[4786]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 00:09:01 metasploitable CRON[4786]: pam_unix(cron:session): session closed for user root
+Oct 24 00:17:01 metasploitable CRON[4816]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 00:17:01 metasploitable CRON[4816]: pam_unix(cron:session): session closed for user root
+Oct 24 00:39:01 metasploitable CRON[4866]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 00:39:01 metasploitable CRON[4866]: pam_unix(cron:session): session closed for user root
+Oct 24 00:59:25 metasploitable sshd[4940]: Did not receive identification string from 192.168.245.4
+Oct 24 00:59:30 metasploitable rlogind[4950]: Connection from 192.168.245.4 on illegal port
+Oct 24 01:01:32 metasploitable sshd[5016]: Protocol major versions differ for 192.168.245.4: SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1 vs. SSH-1.5-Nmap-SSH1-Hostkey
+Oct 24 01:01:32 metasploitable sshd[5019]: Protocol major versions differ for 192.168.245.4: SSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1 vs. SSH-1.5-NmapNSE_1.0
+Oct 24 01:09:01 metasploitable CRON[5097]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 01:09:01 metasploitable CRON[5097]: pam_unix(cron:session): session closed for user root
+Oct 24 01:17:01 metasploitable CRON[5127]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 01:17:02 metasploitable CRON[5127]: pam_unix(cron:session): session closed for user root
+Oct 24 01:39:01 metasploitable CRON[5197]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 01:39:01 metasploitable CRON[5197]: pam_unix(cron:session): session closed for user root
+Oct 24 02:07:29 metasploitable sshd[5275]: Accepted password for msfadmin from 192.168.245.3 port 39736 ssh2
+Oct 24 02:07:29 metasploitable sshd[5277]: pam_unix(sshd:session): session opened for user msfadmin by (uid=0)
+Oct 24 02:09:01 metasploitable CRON[5285]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 02:09:01 metasploitable CRON[5285]: pam_unix(cron:session): session closed for user root
+Oct 24 02:17:01 metasploitable CRON[5316]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 02:17:01 metasploitable CRON[5316]: pam_unix(cron:session): session closed for user root
+Oct 24 02:39:01 metasploitable CRON[5366]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 02:39:01 metasploitable CRON[5366]: pam_unix(cron:session): session closed for user root
+Oct 24 03:04:05 metasploitable sshd[5453]: Accepted password for msfadmin from 192.168.245.3 port 48759 ssh2
+Oct 24 03:04:05 metasploitable sshd[5455]: pam_unix(sshd:session): session opened for user msfadmin by (uid=0)
+Oct 24 03:09:01 metasploitable CRON[5471]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 03:09:01 metasploitable CRON[5471]: pam_unix(cron:session): session closed for user root
+Oct 24 03:09:45 metasploitable sshd[5483]: Accepted password for msfadmin from 192.168.245.1 port 52263 ssh2
+Oct 24 03:09:45 metasploitable sshd[5485]: pam_unix(sshd:session): session opened for user msfadmin by (uid=0)
+Oct 24 03:13:09 metasploitable sudo: msfadmin : TTY=pts/3 ; PWD=/home/msfadmin ; USER=root ; COMMAND=./harden_linux.sh
+Oct 24 03:13:09 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+Oct 24 03:13:09 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+Oct 24 03:13:09 metasploitable sshd[4129]: Received signal 15; terminating.
+Oct 24 03:13:09 metasploitable sshd[5519]: Server listening on :: port 22.
+Oct 24 03:13:09 metasploitable sshd[5519]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.
+Oct 24 03:13:16 metasploitable userdel[5720]: delete user `telnetd' 
+Oct 24 03:13:16 metasploitable userdel[5720]: delete `telnetd' from group `utmp' 
+Oct 24 03:13:16 metasploitable userdel[5720]: removed group `telnetd' owned by `telnetd' 
+Oct 24 03:13:16 metasploitable userdel[5720]: delete `telnetd' from shadow group `utmp' 
+Oct 24 03:17:01 metasploitable CRON[5924]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 03:17:01 metasploitable CRON[5924]: pam_unix(cron:session): session closed for user root
+Oct 24 03:18:22 metasploitable sshd[5485]: Received disconnect from 192.168.245.1: 11: disconnected by user
+Oct 24 03:18:22 metasploitable sshd[5485]: pam_unix(sshd:session): session closed for user msfadmin
+Oct 24 03:39:01 metasploitable CRON[5994]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 03:39:01 metasploitable CRON[5994]: pam_unix(cron:session): session closed for user root
+Oct 24 03:46:52 metasploitable sudo: msfadmin : TTY=pts/2 ; PWD=/home/msfadmin ; USER=root ; COMMAND=/bin/cp /var/log/auth.log /home/msfadmin/auth.log
+Oct 24 03:46:52 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+Oct 24 03:46:52 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+Oct 24 03:47:02 metasploitable sudo: msfadmin : TTY=pts/2 ; PWD=/home/msfadmin ; USER=root ; COMMAND=/bin/chmod 644 /home/msfadmin/auth.log
+Oct 24 03:47:02 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+Oct 24 03:47:02 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+Oct 24 03:47:10 metasploitable sudo: msfadmin : TTY=pts/2 ; PWD=/home/msfadmin ; USER=root ; COMMAND=/usr/sbin/ufw allow 800
+Oct 24 03:47:10 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+Oct 24 03:47:10 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+Oct 24 03:54:22 metasploitable sshd[6051]: Invalid user admin from 192.168.245.1
+Oct 24 03:54:22 metasploitable sshd[6053]: Invalid user admin from 192.168.245.1
+Oct 24 03:54:22 metasploitable sshd[6055]: Invalid user admin from 192.168.245.1
+Oct 24 03:54:22 metasploitable sshd[6057]: Invalid user test from 192.168.245.1
+Oct 24 03:54:23 metasploitable sshd[6059]: Invalid user oracle from 192.168.245.1
+Oct 24 03:54:23 metasploitable sshd[6061]: Invalid user guest from 192.168.245.1
+Oct 24 03:54:23 metasploitable sshd[6063]: Invalid user ubuntu from 192.168.245.1
+Oct 24 03:55:02 metasploitable sudo: msfadmin : TTY=pts/2 ; PWD=/home/msfadmin ; USER=root ; COMMAND=/bin/cp /var/log/auth.log /home/msfadmin/auth.log
+Oct 24 03:55:02 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+Oct 24 03:55:02 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+Oct 24 03:55:08 metasploitable sudo: msfadmin : TTY=pts/2 ; PWD=/home/msfadmin ; USER=root ; COMMAND=/bin/chmod 644 /home/msfadmin/auth.log
+Oct 24 03:55:08 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+Oct 24 03:55:08 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+Oct 24 03:57:16 metasploitable sudo: msfadmin : TTY=pts/2 ; PWD=/home/msfadmin ; USER=root ; COMMAND=/usr/sbin/ufw delete allow 8000
+Oct 24 03:57:16 metasploitable sudo: pam_unix(sudo:session): session opened for user root by msfadmin(uid=0)
+Oct 24 03:57:16 metasploitable sudo: pam_unix(sudo:session): session closed for user root
+Oct 24 04:09:01 metasploitable CRON[6119]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 24 04:09:01 metasploitable CRON[6119]: pam_unix(cron:session): session closed for user root
+Oct 24 04:15:43 metasploitable sshd[6146]: Invalid user admin1 from 192.168.245.1
+Oct 24 04:15:43 metasploitable sshd[6148]: Invalid user admin2 from 192.168.245.1
+Oct 24 04:15:43 metasploitable sshd[6150]: Invalid user admin3 from 192.168.245.1
+Oct 24 04:15:43 metasploitable sshd[6152]: Invalid user admin4 from 192.168.245.1
+Oct 24 04:15:43 metasploitable sshd[6154]: Invalid user admin5 from 192.168.245.1
+Oct 24 04:15:43 metasploitable sshd[6156]: Invalid user admin6 from 192.168.245.1
+Oct 24 04:15:43 metasploitable sshd[6158]: Invalid user admin7 from 192.168.245.1
+Oct 24 04:15:43 metasploitable sshd[6160]: Invalid user admin8 from 192.168.245.1
+Oct 24 04:15:44 metasploitable sshd[6162]: Invalid user admin9 from 192.168.245.1
+Oct 24 04:15:44 metasploitable sshd[6164]: Invalid user admin10 from 192.168.245.1
+Oct 24 04:15:44 metasploitable sshd[6166]: Invalid user admin11 from 192.168.245.1
+Oct 24 04:15:44 metasploitable sshd[6168]: Invalid user admin12 from 192.168.245.1
+Oct 24 04:15:44 metasploitable sshd[6170]: Invalid user admin13 from 192.168.245.1
+Oct 24 04:15:44 metasploitable sshd[6172]: Invalid user admin14 from 192.168.245.1
+Oct 24 04:15:45 metasploitable sshd[6174]: Invalid user admin15 from 192.168.245.1

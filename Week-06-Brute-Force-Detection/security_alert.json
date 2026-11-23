@@ -1,0 +1,85 @@
+{
+    "metadata": {
+        "engine": "Automated Incident Alerting & Brute-Force Detection Engine",
+        "version": "1.0.0",
+        "generated_at": "2026-11-24T00:16:45.107265",
+        "configuration": {
+            "threshold": 10,
+            "window_seconds": 60,
+            "cooldown_seconds": 120,
+            "privileged_usernames": [
+                "root",
+                "admin",
+                "administrator",
+                "wheel",
+                "toor",
+                "superuser",
+                "oracle",
+                "postgres",
+                "mysql",
+                "master",
+                "sysadmin"
+            ]
+        },
+        "summary": {
+            "total_log_lines_analyzed": 112,
+            "total_failed_events_parsed": 22,
+            "unique_source_ips_seen": 1,
+            "total_incidents_detected": 1,
+            "critical_incidents": 0,
+            "high_incidents": 1,
+            "medium_incidents": 0,
+            "low_incidents": 0,
+            "unique_malicious_ips": [
+                "192.168.245.1"
+            ]
+        }
+    },
+    "alerts": [
+        {
+            "alert_id": "SEC-ALERT-20261024-001",
+            "source_ip": "192.168.245.1",
+            "severity": "HIGH",
+            "attack_type": "Horizontal Password Spraying",
+            "attack_start_time": "2026-10-24T04:15:43",
+            "trigger_time": "2026-10-24T04:15:44",
+            "attack_end_time": "2026-10-24T04:15:45",
+            "duration_seconds": 2.0,
+            "total_failed_attempts": 15,
+            "peak_window_attempts": 15,
+            "detection_parameters": {
+                "threshold": 10,
+                "window_seconds": 60
+            },
+            "targeted_usernames": {
+                "admin1": 1,
+                "admin2": 1,
+                "admin3": 1,
+                "admin4": 1,
+                "admin5": 1,
+                "admin6": 1,
+                "admin7": 1,
+                "admin8": 1,
+                "admin9": 1,
+                "admin10": 1,
+                "admin11": 1,
+                "admin12": 1,
+                "admin13": 1,
+                "admin14": 1,
+                "admin15": 1
+            },
+            "unique_targeted_count": 15,
+            "firewall_mitigation": {
+                "ufw": "ufw insert 1 deny from 192.168.245.1 to any port 22 proto tcp comment 'SEC-ALERT-20261024-001-Containment'",
+                "iptables": "iptables -I INPUT 1 -s 192.168.245.1 -p tcp --dport 22 -j DROP -m comment --comment 'SEC-ALERT-20261024-001-Containment'"
+            },
+            "sample_evidence": [
+                "Oct 24 04:15:43 metasploitable sshd[6146]: Invalid user admin1 from 192.168.245.1",
+                "Oct 24 04:15:43 metasploitable sshd[6148]: Invalid user admin2 from 192.168.245.1",
+                "Oct 24 04:15:43 metasploitable sshd[6150]: Invalid user admin3 from 192.168.245.1",
+                "Oct 24 04:15:43 metasploitable sshd[6152]: Invalid user admin4 from 192.168.245.1",
+                "Oct 24 04:15:43 metasploitable sshd[6154]: Invalid user admin5 from 192.168.245.1"
+            ]
+        }
+    ]
+}
